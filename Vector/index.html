@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load color palettes -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  
+<link rel="stylesheet" href="vector.css">
+
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  <div>
+    <title>Vector Data: Sam Donnermeyer</title>
+  </div>
+</head>
+<body class="main_body">
+  <div class="card">
+    <!-- Header 1-->
+    <h1 class = "main_title">WWII Bombing Locations</h1>
+    <!-- Body -->
+    <!-- Body <body>-->
+    <main>
+      <div class="body_p">
+        WWII was the last war that engulfed the entire world. Starting in 1939 when Germany invaded Poland, the two sides were formed, the Axis powers, Germany, Italy, and Japan, and the Allies, France, Great Britain, the United States, the Soviet Union, and China. Since the last World War in 1918 to the outbreak of war in 1939, military aircraft increased in size, speed, and range. And soon military air operations became a powerful force in the war. 
+      </div>
+
+      <h3>Did the Allies' aircraft bombardments in WWII increase in frequency as the war progressed?</h3>
+      
+      <div class="body_p">
+      </div>
+      
+      <!-- Create a slider to change the year displayed in the chart -->
+      <span class="left_label">1939</span>
+      <input id="year_slider" type="range" min="1939" max="1945" value="1939"></input>
+      <span class="right_label">1945</span>
+
+      <h3 id="year_designator"></h3>
+      
+      <body id="viz"></body>
+
+      <!-- Create an element where the map will take place -->
+      <svg id="mainsvg" width="950" height="400"></svg> 
+
+      <div class="foot_note">
+        Source: The <a href="https://www.airforce.com/">US Air Force's</a> digitized paper reports of aerial missions during WWII: <a href="https://www.kaggle.com/usaf/world-war-ii">(Data)</a>
+      </div>
+
+      <div class="body_p">
+        The data seems to be lacking in records. Europe, specifically Germany, during WWII experienced a vast number of aerial bombardments throughout the entirity of the war 1939 to May 8, 1945 (VE Day) from the Allies air attacks. The error could be accounted for the loss of physical records during the war that depicted the target locations of bombardments. Therefore, it is difficult to come to any conclusion that there was a significant increase in the use of aerial bombings in WWII as time progressed.
+      </div>
+
+      <body id="viz2"></body>
+
+      <!-- JS file -->
+      <script src="vector.js"></script> 
+   
+    <main>
+  </div>
+<!-- Body </body>-->
+</body>
+
+</html>

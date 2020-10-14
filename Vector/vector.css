@@ -1,0 +1,67 @@
+h1 {
+    font-family: "Georgia";
+    text-align: center;
+}
+
+.main_title {
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: underline;
+    color: #3F4048;
+}
+
+.main_body {
+    padding: 10px;
+    margin: 5px 5px 5px;
+    text-align: center;
+}
+
+.body_p {
+    margin: 10px 100px;
+    text-align: left;
+    color: #626268;
+}
+
+body {
+    background-color: #eee;
+}
+
+.card {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 1000px;
+    height: 860px; 
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+}
+
+h3 {
+    color: #3F4048;
+}
+
+rect {
+    stroke-width: .5;
+}
+
+.foot_note {
+    margin: 20px 100px;
+    text-align: left;
+    color: #626268;
+}
+
+input.year_slider {
+    width: 400px;
+    margin-right: 100px;
+}
+
+.left_label {
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
+
+.right_label {
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
