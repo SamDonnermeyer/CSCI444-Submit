@@ -1,8 +1,9 @@
-// TODO: 
-// Map Wrapping 
-// finish write-up 
-// Create Line chart for Quantity of missions 
+// CSCI 444: Data Visualization 
+// Vector Data Assignment 
+// Fall 2020
+// Sam Donnermeeyer
 
+/////////// Constants and Objects ///////////
 // Consts for the Graphic's SVGs 
 svg_height = 400
 svg_width = 300
@@ -25,13 +26,11 @@ svg = d3.select("body#viz")
 var projection1 = d3.geoMercator()
     .scale(400)
     .center([40, 45])
-    //.translate([svg_width/2, (svg_height/2)])
 
 // Map and projection
 var projection2 = d3.geoMercator()
     .scale(225)
     .center([200, 5])
-    //.translate([svg_width/2, svg_height/2])
 
 // A path generator
 var path1 = d3.geoPath()
@@ -220,53 +219,14 @@ function drawPlot2(dataGeo2, data2) {
     .text("Pacific Theatre")
     .style("font-size", "30px")
     .style("fill", "#C70039")
-    //.style("text-decoration", "underline overline")
 
 }
-
-/*
-//////// Line Graph //////////
-var svg_line_margin = {top: 10, right: 100, bottom: 30, left: 30},
-    svg_line_height = 300,
-    svg_line_width = 500;
-
-// overall svg
-svg_scatter = d3.select("body#viz2")
-    .append("svg")
-    .attr("id", "scatterplot_svg")
-    .attr("height", svg_line_height)
-    .attr("width", svg_line_width*2)
-
-// Set up SVGs 
-svg3 = d3.select("svg#scatterplot_svg")
-    .append("svg")
-    .attr("id", "svg3")
-    .attr("height", svg_line_height)
-    .attr("width", svg_line_width)
-
-d3.queue()
-  .defer(d3.csv, "explosives.csv") 
-  .await(ready3);
-
-  // Second Map 
-function ready3(error, data3) {
-  // Create Plot 
-  drawPlot3(data3);
-}
-
-function drawPlot2(dataGeo2, data2) {
-
-}
-*/
 
 function update_year() {
   // Get year from slider 
   var slider_year = document.getElementById("year_slider").value;
 
-  //d3.select("#year_designator").remove()
-
   // Change the Year Designator 
-
   var text = d3.select("#year_designator");
 
   if (text.empty()) {
@@ -276,5 +236,8 @@ function update_year() {
     return slider_year;
   });
 }
+
+
+
 
 
