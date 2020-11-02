@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Load color palettes -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+  
+<link rel="stylesheet" href="networks.css">
+
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  <div>
+    <title>One-to-Many Data: Sam Donnermeyer</title>
+  </div>
+</head>
+<body class="main_body">
+  <div class="card">
+    <!-- Header 1-->
+    <h1 class = "main_title">Lord of the Rings Fellowship Network</h1>
+    <!-- Body -->
+    <!-- Body <body>-->
+    <main>
+      <div class="body_p">
+        The Lord of the Rings trilogy contains one of the most heroic and daring adventures ever undertaken. A small band of hobbits lead by Frodo Baggins set out from their home to transport the most evil item, the ring of power, in all of Middle Earth in hopes of aiding in its destruction. After reaching an elvish safe haven, Lorien, a fellowship of nine which consisted of men, hobbits, an elf, a dwarf, and a wizard, was appointed to destroy the ring by going to the land of Mordor and casting it into the Mountain of Fire, destroying it and its power forever. Throughout the course of the story, the nine that set out from Lorien were separated and found their own paths of aiding in the battle. In hopes of understanding how the relationships between the members of the fellowship morphed and changed over the course of their adventure, understanding the frequency that they spoke to each other may lend helpful in understanding how their relationships changed.
+      </div>
+
+      <h3>The relationships between the members of the Fellowship morphed and changed over the course of their adventure.</h3>
+      
+      <div class="body_p">
+      </div> 
+
+      <!-- Buttons for Filtering Data - By Novel -->
+      <button class="button button1"
+              onclick="displayNetwork(1)"
+      >Fellowship of the Ring</button>
+
+      <button class="button button2"
+              onclick="displayNetwork(2)"
+      >Two Towers</button>
+
+      <button class="button button3"
+              onclick="displayNetwork(3)"
+      >Return of the King</button>
+
+      <button class="button button4"
+              onclick="displayNetwork(0)"
+      >Entire Trilogy</button>
+      
+
+      <h2 id="novel_designator">Entire Trilogy</h2>
+
+      <!-- Create an element where the network will take place -->
+      <iframe id="i_net" scrolling="no" frameborder="0" title="Interactive or visual content" src="https://flo.uri.sh/visualisation/4205685/embed?auto=1" style="width: 90%; height: 500px;"></iframe>
+      
+
+      <div class="foot_note">
+        Source: Raw data is collected from <a href="http://www.morethanbooks.eu/graph-network-of-the-lord-of-the-rings/">José Calvo's Blog Post</a> - Network of The Lord of the Rings</a>
+      </div>
+
+      <div class="body_p">
+      </div>
+
+      <body id="viz2"></body>
+
+      <!-- JS file -->
+      <script src="networks.js"></script> 
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      
+    <main>
+  </div>
+</body>
+
+
+</html>
